@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 const ProblemSlide = () => {
@@ -110,7 +109,8 @@ const ProblemSlide = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>
+        {`
         @keyframes bounce-in {
           0% {
             transform: translateY(20px) scale(0.9);
@@ -133,7 +133,8 @@ const ProblemSlide = () => {
             transform: scaleX(1);
           }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };

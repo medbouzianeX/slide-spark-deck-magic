@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { ExternalLink, Zap, Shield, Globe } from 'lucide-react';
 
@@ -151,7 +150,8 @@ const MVPSlide = () => {
       <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-pink-400/30 rounded-full animate-float" style={{ animationDelay: '1s' }} />
       <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-purple-300/40 rounded-full animate-float" style={{ animationDelay: '2s' }} />
 
-      <style jsx>{`
+      <style>
+        {`
         @keyframes float {
           0%, 100% {
             transform: translateY(0px) rotate(0deg);
@@ -164,7 +164,8 @@ const MVPSlide = () => {
         .animate-float {
           animation: float 3s ease-in-out infinite;
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };
